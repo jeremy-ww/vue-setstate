@@ -4,8 +4,9 @@
   "description": "Optimizing Vue big data processing",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint *.js",
-    "test": "cross-env NODE_ENV=dev && jest"
+    "lint": "eslint **/*.js",
+    "test": "cross-env NODE_ENV=dev && jest",
+    "build": "rollup -i src/index.js -o index.js -f umd -n setState"
   },
   "repository": {
     "type": "git",
@@ -36,6 +37,7 @@
     "eslint-plugin-standard": "3.0.1",
     "jest": "21.2.1",
     "regenerator-runtime": "0.11.0",
+    "rollup": "0.52.0",
     "vue": "2.5.8",
     "vue-template-compiler": "2.5.8",
     "vue-test-utils": "1.0.0-beta.6"
