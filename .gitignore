@@ -1,0 +1,7 @@
+node_modules/
+.DS_Store
+docs/_book
+dist/
+*.log
+test/e2e/screenshots
+test/e2e/reports
