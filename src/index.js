@@ -13,7 +13,7 @@ function setState (Vue) {
   }
 
   Vue.mixin({
-    beforeCreate () {
+    beforeCreate: function () {
       mountState2VM.call(this, this.$options.state)
     }
   })
