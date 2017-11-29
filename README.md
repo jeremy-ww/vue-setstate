@@ -7,6 +7,7 @@ Using React style setState method in Vue, Apply to optimize rendering speed of b
 ```bash
 $ npm i vue-setstate -S
 ```
+
 CDN: [UNPKG](https://unpkg.com/vue-setstate) | [jsDelivr](https://cdn.jsdelivr.net/npm/vue-setstate/index.js)
 
 ## Usage
@@ -18,12 +19,12 @@ import setState from 'vue-setstate'
 Vue.use(setState)
 ```
 
-Then in your component
+Then in your component:
 
 ```js
 <script>
 export default {
-  stats: {
+  state: {
     // your data here
     name: 'tom'
   },
@@ -36,6 +37,8 @@ export default {
 }
 </script>
 ```
+
+> Warning: `state` is not **reactive**!, you must use `setState` method if you want change the view.
 
 ## License
 
