@@ -8,7 +8,7 @@ function setState (Vue) {
   function mountState2VM (state) {
     if (state == null || Object.keys(state).length === 0) return
 
-    for (let prop in state) {
+    for (var prop in state) {
       this[prop] = state[prop];
     }
   }
@@ -19,7 +19,7 @@ function setState (Vue) {
   };
 
   Vue.mixin({
-    beforeCreate () {
+    beforeCreate: function () {
       mountState2VM.call(this, this.$options.state);
     }
   });

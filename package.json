@@ -1,6 +1,6 @@
 {
   "name": "vue-setstate",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Optimizing Vue big data processing",
   "main": "index.js",
   "module": "src/index.js",
