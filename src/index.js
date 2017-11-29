@@ -2,7 +2,7 @@ function setState (Vue) {
   function mountState2VM (state) {
     if (state == null || Object.keys(state).length === 0) return
 
-    for (let prop in state) {
+    for (var prop in state) {
       this[prop] = state[prop]
     }
   }
