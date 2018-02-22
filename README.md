@@ -38,7 +38,7 @@ export default {
 </script>
 ```
 
-> Warning: `state` is not **reactive**!, you must use `setState` method if you want change the view.
+> Warning: `state` is not **reactive**!, you must use `setState` method if you want to change the view.
 
 ## License
 
