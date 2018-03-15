@@ -1,7 +1,7 @@
 node_modules/
 .DS_Store
 docs/_book
-dist/
+libs/
 *.log
 test/e2e/screenshots
 test/e2e/reports
