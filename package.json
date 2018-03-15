@@ -2,8 +2,8 @@
   "name": "vue-setstate",
   "version": "0.0.3",
   "description": "Optimizing Vue big data processing",
-  "main": "index.js",
-  "module": "src/index.js",
+  "main": "libs/vue-setstate.cjs.js",
+  "module": "libs/vue-setstate.min.js",
   "scripts": {
     "lint": "eslint **/*.js",
     "test": "cross-env NODE_ENV=dev && jest",
