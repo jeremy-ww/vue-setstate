@@ -1,15 +1,27 @@
-function setState (Vue) {
-  function mountState2VM (state) {
-    if (state == null || Object.keys(state).length === 0) return
+import isType from 'sewing/dist/isType'
 
+function setState (Vue) {
+  function assignmentProp2State (vm, state) {
     for (var prop in state) {
-      this[prop] = state[prop]
+      vm[prop] = state[prop]
+    }
+  }
+
+  function mountState2VM (state) {
+    if (state == null) return
+
+    if (isType(state, 'Object')) {
+      assignmentProp2State(this, state)
+    }
+
+    if (isType(state, 'Function')) {
+      assignmentProp2State(this, state.call(this, this))
     }
   }
 
   Vue.prototype.setState = function (state) {
     mountState2VM.call(this, state)
-    this.$forceUpdate()
+    this.$nextTick(this.$forceUpdate)
   }
 
   Vue.mixin({
