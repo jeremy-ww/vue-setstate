@@ -7,7 +7,7 @@
   "scripts": {
     "lint": "eslint **/*.js",
     "test": "cross-env NODE_ENV=dev && jest",
-    "build": "bili --format cjs,umd,umd-min --moduleName setState"
+    "build": "bili --format cjs,umd,umd-min --outDir ./libs --moduleName setState"
   },
   "repository": {
     "type": "git",
