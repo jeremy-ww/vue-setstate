@@ -32,6 +32,11 @@ export default {
   methods: {
     changeMyName () {
       this.setState({ name: 'mary' })
+    },
+    changeMyNameWithFunctionalParam () {
+      this.setState(({ name }) => ({
+        name: `Hi ${name}`
+      }))
     }
   }
 }
