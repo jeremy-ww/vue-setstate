@@ -1,6 +1,6 @@
 {
   "name": "vue-setstate",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Optimizing Vue big data processing",
   "main": "libs/vue-setstate.cjs.js",
   "module": "libs/vue-setstate.min.js",
