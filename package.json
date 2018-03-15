@@ -43,5 +43,7 @@
     "vue-template-compiler": "2.5.8",
     "vue-test-utils": "1.0.0-beta.6"
   },
-  "dependencies": {}
+  "dependencies": {
+    "sewing": "0.0.33"
+  }
 }
