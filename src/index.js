@@ -36,4 +36,3 @@ export default setState
 if (typeof window !== 'undefined' && window.Vue) {
   setState(window.Vue)
 }
-
