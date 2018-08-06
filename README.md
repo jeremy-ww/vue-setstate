@@ -1,4 +1,4 @@
-# vue-setState [![Build Status](https://img.shields.io/travis/Army-U/vue-setstate.svg?style=flat-square)](https://travis-ci.org/Army-U/vue-setstate) [![npm package](https://img.shields.io/npm/v/vue-setstate.svg?style=flat-square)](https://www.npmjs.com/package/vue-setstate)
+# vue-setState [![Build Status](https://flat.badgen.net/circleci/github/Army-U/vue-setstate/master)](https://travis-ci.org/Army-U/vue-setstate) [![npm package](https://flat.badgen.net/npm/v/vue-setstate)](https://www.npmjs.com/package/vue-setstate)
 
 Using React style setState method in Vue, Apply to optimize rendering speed of big data
 
